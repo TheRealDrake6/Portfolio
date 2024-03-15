@@ -60,6 +60,10 @@ h2, p, h3, a {
   margin-right: 10%;
 }
 
+.main p {
+  margin-top: 1%;
+}
+
 .scs a {
   border: solid 2px rgb(45, 76, 58);
   border-radius: 5px;
@@ -225,10 +229,12 @@ h2, p, h3, a {
   flex-direction: column;
   margin-top: 15px;
   margin-left: 15px;
+  margin-right: 25px;
 }
 
 .input-mid {
   margin-left: 15px;
+  margin-right: 25px;
 }
 
 .name, .email, .subject, .message {
