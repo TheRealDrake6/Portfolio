@@ -114,6 +114,13 @@
         align-items: stretch;
         justify-content: space-between;
     }
+    .input{
+        flex-direction: row;
+    }
+    .name, .email, .subject, .message{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 
 }
 
@@ -134,5 +141,10 @@
     }
     .portfolio-boxes{
         width: 100%;
+    }
+    .contact{
+        max-width: 1200px;
+        margin-left: 10px;
+        margin-right: 10px;
     }
 }

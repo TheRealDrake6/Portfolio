@@ -1,12 +1,22 @@
-h2{
+h2, p, h3, a{
     color: white;
-}
-p{
-    color: white;
+    text-decoration: none;
 }
 
-.main h2, .main p{
+.main h2, .main p, .main h3{
     margin-left: 10%;
     margin-top: 3%;
     margin-right: 10%;
+}
+
+.scs a{
+    border: solid 2px rgba(45,76,58,1);
+    border-radius: 5px;
+    background-color: rgba(45,76,58,1);
+    padding: 5px;
+}
+
+.scs a:hover{
+    background-color: white;
+    color: rgba(45,76,58,1);
 }
