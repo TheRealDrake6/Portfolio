@@ -20,8 +20,8 @@
     .header-container{
         display: block;
         position: fixed;
-        width: 25%;
-        height: 100vh;
+        width: 25vw;
+        height: 100%;
         background: rgb(45,76,58);
         background: linear-gradient(180deg, rgba(45,76,58,1) 70%, rgba(36,36,36,1) 100%);
         top: 0;
@@ -102,13 +102,13 @@
 }
 
 @media screen and (min-width: 992px){
-    .header-container{
-        width: 20%;
-    }
-    .main{
-        left: 20vw;
-        width: 80vw;
-    }
+    // .header-container{
+    //     width: 20%;
+    // }
+    // .main{
+    //     left: 20vw;
+    //     width: 80vw;
+    // }
     .portfolio-boxes{
         flex-direction: row;
         align-items: stretch;
@@ -125,13 +125,13 @@
 }
 
 @media screen and (min-width: 1200px){
-    .header-container{
-        width: 15%;
-    }
-    .main{
-        left: 15vw;
-        width: 85vw;
-    }
+    // .header-container{
+    //     width: 15%;
+    // }
+    // .main{
+    //     left: 15vw;
+    //     width: 85vw;
+    // }
 
     .nav > ul > li > a{
         line-height: 5em;

@@ -8,6 +8,10 @@ body {
   margin: 0;
   overflow-x: hidden;
   background-color: #373737;
+  width: 100%;
+}
+
+main {
   width: 100vw;
 }
 
@@ -140,7 +144,7 @@ h2, p, h3, a {
   box-sizing: border-box;
   display: block;
   position: relative;
-  width: 100%;
+  width: 100vw;
   margin-top: 30px;
   border: solid #4E4E4E 1px;
   border-radius: 15px;
@@ -282,8 +286,8 @@ h2, p, h3, a {
   .header-container {
     display: block;
     position: fixed;
-    width: 25%;
-    height: 100vh;
+    width: 25vw;
+    height: 100%;
     background: rgb(45, 76, 58);
     background: linear-gradient(180deg, rgb(45, 76, 58) 70%, rgb(36, 36, 36) 100%);
     top: 0;
@@ -359,13 +363,6 @@ h2, p, h3, a {
   }
 }
 @media screen and (min-width: 992px) {
-  .header-container {
-    width: 20%;
-  }
-  .main {
-    left: 20vw;
-    width: 80vw;
-  }
   .portfolio-boxes {
     flex-direction: row;
     align-items: stretch;
@@ -380,13 +377,6 @@ h2, p, h3, a {
   }
 }
 @media screen and (min-width: 1200px) {
-  .header-container {
-    width: 15%;
-  }
-  .main {
-    left: 15vw;
-    width: 85vw;
-  }
   .nav > ul > li > a {
     line-height: 5em;
     text-decoration: none;
