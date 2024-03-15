@@ -28,3 +28,13 @@ h2, p, h3, a{
     background-color: white;
     color: rgba(45,76,58,1);
 }
+
+.social {
+    ul {
+        li {
+            a:hover{
+                border-bottom: solid white 3px;
+            }
+        }
+    }
+}
