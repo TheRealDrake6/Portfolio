@@ -110,7 +110,7 @@ h2, p, h3, a {
 }
 
 .burger-container {
-  position: absolute;
+  position: fixed;
   top: 20px;
   display: flex;
   height: 55px;
@@ -121,7 +121,7 @@ h2, p, h3, a {
   justify-content: center;
   margin-left: 20px;
   margin-right: auto;
-  z-index: 1;
+  z-index: 2;
   cursor: pointer;
 }
 
@@ -278,6 +278,57 @@ h2, p, h3, a {
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(91, 192, 222, 0.6);
 }
 
+.smallnav {
+  position: fixed;
+  top: 0;
+  right: -100vw;
+  width: 80vw;
+  height: 100%;
+  background: rgb(45, 76, 58);
+  background: linear-gradient(180deg, rgb(45, 76, 58) 70%, rgb(36, 36, 36) 100%);
+  overflow-y: auto;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  z-index: 0;
+}
+
+.smallnav-show {
+  right: 0;
+}
+
+.smallnav ul {
+  list-style: none;
+  padding-left: 0;
+}
+.smallnav ul .contact {
+  border-top: solid 2px white;
+  border-bottom: solid 2px white;
+}
+.smallnav ul li {
+  position: relative;
+}
+.smallnav ul li a {
+  font-size: small;
+  line-height: 4em;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  display: block;
+  color: white;
+  text-align: center;
+}
+.smallnav ul li a:hover {
+  text-decoration: underline;
+  text-decoration-color: white;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 10px;
+}
+
+.allmove {
+  right: 275px;
+  cursor: pointer;
+}
+
 .header-container {
   display: none;
 }
@@ -297,7 +348,7 @@ h2, p, h3, a {
     background: rgb(45, 76, 58);
     background: linear-gradient(180deg, rgb(45, 76, 58) 70%, rgb(36, 36, 36) 100%);
     top: 0;
-    z-index: 1;
+    z-index: 2;
   }
   .nav {
     position: relative;
@@ -366,6 +417,10 @@ h2, p, h3, a {
   }
   .social ul li a img {
     width: 20px;
+  }
+  .smallnav {
+    right: -350px;
+    width: 350px;
   }
 }
 @media screen and (min-width: 992px) {
