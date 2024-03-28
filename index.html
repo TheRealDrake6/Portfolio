@@ -14,6 +14,7 @@
 <body onload="typeWriter(); typeWriter2()">
     <header>
     </header>
+    <div class="clickableoverlay"></div>
     <main>
         <div class="burger-container">
             <div class="burger">
@@ -46,7 +47,7 @@
                 </div>
             </aside>
         </div>
-        <div class="main">
+        <div class="main allmove">
             <div class="img-header">
                 <img src="images/green.png" alt="Photo by https://unsplash.com/@theshubhamdhage?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash Shubham Dhage on https://unsplash.com/photos/a-picture-of-a-green-object-with-a-white-background-uSNuKKh7wpA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash Unsplash">
                 <div class="title">
@@ -91,7 +92,42 @@
             </div>
             <div class="coding" id="coding">
                 <h2>Coding Examples</h2>
-                <p>Coming Soon</p>
+                <p>
+                    This snippet of code is the JavaScript I have used to validate my form, it checks that there is something in all of the required boxes and also checks to see if the email is a valid address.
+                </p>
+                <div class="code">
+                    <pre>
+                        <code>
+var mailFormat =  /\S+@\S+\.\S+/;
+
+function validateForm() {
+    let w = document.forms["nameForm"]["name"].value;
+    let x = document.forms["emailForm"]["email"].value;
+    let y = document.forms["subjectForm"]["subject"].value;
+    let z = document.forms["messageForm"]["message"].value;
+    if (w == "") {
+        alert("Name must be filled out");
+        return false;
+    }
+    if (y == "") {
+        alert("Subject must be filled out");
+        return false;
+    }
+    if (z == "") {
+        alert("Message must be filled out");
+        return false;
+    }
+    if (x.match(mailFormat)) {
+        return true;
+    } else {
+        alert("Invalid address!");
+        return false;
+    }
+    
+}
+                        </code>
+                    </pre>
+                </div>
             </div>
             <div class="scs" id="scs">
                 <h2>SCS Scheme</h2>

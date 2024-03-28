@@ -199,7 +199,7 @@
     text-transform: uppercase;
     text-align: center;
     font-weight: bold;
-    z-index: 0;
+    z-index: 4;
 }
 .smallnav-show{
     right: 0;
@@ -236,4 +236,22 @@
 .allmove {
     right: 275px;
     cursor: pointer;
+  }
+
+  .clickableoverlay{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+    z-index: 3;
+  }
+
+  .code{
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }

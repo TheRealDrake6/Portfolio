@@ -3,7 +3,7 @@ var i2 = 0;
 var txt1 = 'Ryan Drake';
 var txt2 = 'Web Developer';
 var speed = 100;
-var mailFormat =  /\S+@\S+\.\S+/;
+
 
 const $burgercontainer = $(".burger-container");
 const $sidebar = $(".smallnav");
@@ -41,6 +41,8 @@ $(".clickableoverlay").on("click", function(){
     $bodyAll.toggleClass("allmove");
     $("body").css("overflow", "auto");
 });
+
+var mailFormat =  /\S+@\S+\.\S+/;
 
 function validateForm() {
     let w = document.forms["nameForm"]["name"].value;
